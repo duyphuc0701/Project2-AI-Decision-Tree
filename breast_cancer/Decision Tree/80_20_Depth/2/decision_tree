@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<concave points_mean &le; 0.049<br/>entropy = 0.953<br/>samples = 455<br/>value = [285, 170]<br/>class = Benign>, fillcolor="#f5ccaf"] ;
+1 [label=<radius_worst &le; 16.83<br/>entropy = 0.301<br/>samples = 280<br/>value = [265, 15]<br/>class = Benign>, fillcolor="#e68844"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 0.114<br/>samples = 262<br/>value = [258, 4]<br/>class = Benign>, fillcolor="#e5833c"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.964<br/>samples = 18<br/>value = [7, 11]<br/>class = Malignant>, fillcolor="#b7dbf6"] ;
+1 -> 3 ;
+4 [label=<perimeter_worst &le; 114.65<br/>entropy = 0.513<br/>samples = 175<br/>value = [20, 155]<br/>class = Malignant>, fillcolor="#53aae8"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<entropy = 0.984<br/>samples = 47<br/>value = [20.0, 27.0]<br/>class = Malignant>, fillcolor="#cce6f8"] ;
+4 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 128<br/>value = [0, 128]<br/>class = Malignant>, fillcolor="#399de5"] ;
+4 -> 6 ;
+}

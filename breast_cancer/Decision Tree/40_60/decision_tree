@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<concave points_mean &le; 0.049<br/>entropy = 0.954<br/>samples = 227<br/>value = [142, 85]<br/>class = Benign>, fillcolor="#f5ccb0"] ;
+1 [label=<area_se &le; 34.405<br/>entropy = 0.282<br/>samples = 143<br/>value = [136, 7]<br/>class = Benign>, fillcolor="#e68743"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<radius_worst &le; 17.575<br/>entropy = 0.066<br/>samples = 128<br/>value = [127, 1]<br/>class = Benign>, fillcolor="#e5823b"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 127<br/>value = [127, 0]<br/>class = Benign>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = Malignant>, fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label=<symmetry_se &le; 0.02<br/>entropy = 0.971<br/>samples = 15<br/>value = [9, 6]<br/>class = Benign>, fillcolor="#f6d5bd"] ;
+1 -> 5 ;
+6 [label=<texture_mean &le; 15.685<br/>entropy = 0.592<br/>samples = 7<br/>value = [1, 6]<br/>class = Malignant>, fillcolor="#5aade9"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = Benign>, fillcolor="#e58139"] ;
+6 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 6<br/>value = [0, 6]<br/>class = Malignant>, fillcolor="#399de5"] ;
+6 -> 8 ;
+9 [label=<entropy = 0.0<br/>samples = 8<br/>value = [8, 0]<br/>class = Benign>, fillcolor="#e58139"] ;
+5 -> 9 ;
+10 [label=<concavity_worst &le; 0.232<br/>entropy = 0.371<br/>samples = 84<br/>value = [6, 78]<br/>class = Malignant>, fillcolor="#48a5e7"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label=<entropy = 0.0<br/>samples = 5<br/>value = [5, 0]<br/>class = Benign>, fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label=<texture_worst &le; 20.355<br/>entropy = 0.098<br/>samples = 79<br/>value = [1, 78]<br/>class = Malignant>, fillcolor="#3c9ee5"] ;
+10 -> 12 ;
+13 [label=<perimeter_mean &le; 98.235<br/>entropy = 0.918<br/>samples = 3<br/>value = [1, 2]<br/>class = Malignant>, fillcolor="#9ccef2"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = Benign>, fillcolor="#e58139"] ;
+13 -> 14 ;
+15 [label=<entropy = 0.0<br/>samples = 2<br/>value = [0, 2]<br/>class = Malignant>, fillcolor="#399de5"] ;
+13 -> 15 ;
+16 [label=<entropy = 0.0<br/>samples = 76<br/>value = [0, 76]<br/>class = Malignant>, fillcolor="#399de5"] ;
+12 -> 16 ;
+}
